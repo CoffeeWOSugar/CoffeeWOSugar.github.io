@@ -7,40 +7,44 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
+  <!-- It really feels like there is less to comment on when using bootstrap rather than pure html and css. 
+      Be that either good or bad, but it feels like I have done less but acomplished more.-->
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Container for navigation links -->
     <div class="container">
+      <!-- Website title on navbar display -->
       <a class="navbar-brand" href="index.html">My Portfolio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active " href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-        </ul>
-      </div>
+
+      <!-- Clickalbe nav-items in unordered list as nav menu-->
+      <ul class="navbar-nav ms-auto">
+        <!-- Index marked as active since it will be the active page here -->
+        <li class="nav-item"><a class="nav-link active " href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+      </ul>
     </div>
   </nav>
 
   <!-- Hero Section -->
   <section class="py-5 text-center">
-    <div class="container">
-      <img src="images/default_profile.png" class="img-fluid rounded-3" alt="Portrait of me">
-      <h1 class="display-4">Hi, I'm <span class="text-primary">Vincent&nbsp;Andersson</span></h1>
-      <p class="lead mb-4">Computer Engineer, computer architecture enthusiast, newbie web designer.</p>
-      <a href="#contact" class="btn btn-outline-primary btn-lg">Get in Touch</a>
-    </div>
+    <img src="images/default_profile.png" class="img-fluid rounded-3" alt="Portrait of me">
+    <h1 class="display-4">Hi, I'm <span class="text-primary">Vincent&nbsp;Andersson</span></h1>
+    <p class="lead mb-4">Computer Engineer, computer architecture enthusiast, newbie web designer.</p>
+    <a href="#contact" class="btn btn-outline-primary btn-lg">Get in Touch</a>
   </section>
 
   <!-- Contact Form -->
   <section id="contact" class="py-5 bg-dark text-light">
+    <!-- Container to help grouop the form elements -->
     <div class="container">
       <h2 class="mb-4">Contact Me</h2>
       <form action="#" method="post" class="row g-3">
+        <!-- Col is used here to better define the space required for the form elements -->
+        <!-- In this case, the form elements require half of avaliable space -->
         <div class="col-md-6">
           <label for="name" class="form-label">Name</label>
           <input type="text" class="form-control" id="name" placeholder="Your Name">
@@ -49,10 +53,13 @@
           <label for="email" class="form-label">Email</label>
           <input type="email" class="form-control" id="email" placeholder="you@example.com">
         </div>
+        <!-- The message is meant to be longer than the name or return address so it is defined to
+         be much wider. -->
         <div class="col-12">
           <label for="message" class="form-label">Message</label>
           <textarea class="form-control" id="message" rows="5" placeholder="Say Hi..."></textarea>
         </div>
+        <!-- The submit button will require less space than the input fields. -->
         <div class="col-12">
           <button type="submit" class="btn btn-primary">Send Message</button>
         </div>
@@ -60,12 +67,14 @@
     </div>
   </section>
 
+  <!-- Footer which may contain copyright info, in this case there is none. -->
   <footer class="py-4 text-center">
     <div class="container">
       <small>&copy; 2025 Could be placed here, but is not for the assignment.</small>
     </div>
   </footer>
 
+  <!-- Bootstrap script ref -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>

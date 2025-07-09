@@ -1,28 +1,152 @@
 /* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+/* General style for all elements. */
 body {
   background-color: #121212;
   color: #f8f9fa;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
-a,
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: #f1f1f1;
+  margin-bottom: 0.5rem;
+}
+
+/* A lot of the margins get overridden by the margin classes from bootstrap, 
+  but these values gave me some starting of points and is still used in some cases. */
+p {
+  margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+  color: #f8f9fa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0d6efd;
+}
+
 .nav-link,
 .navbar-brand {
   color: #f8f9fa;
+  transition: color 0.3s ease;
 }
-a:hover,
+
 .nav-link:hover,
 .navbar-brand:hover {
   color: #0d6efd;
-  text-decoration: none;
 }
-.card,
+
+/* Components */
+.card {
+  background-color: #1e1e1e;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+}
+
 .list-group-item {
   background-color: #1e1e1e;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.75rem 1.25rem;
 }
+
+/* Utility Colors */
 .text-primary {
   color: #0d6efd !important;
 }
+
+.text-muted {
+  color: #b0b0b0;
+}
+
+/* Footer */
 footer {
   background-color: #000;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #aaa;
+}
+
+/* Buttons */
+/*Its a bit weird to change the classes from bottstrap but I like the ability to do so. */
+.button-primary {
+  background-color: #0d6efd;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-primary:hover {
+  background-color: #0b5ed7;
+}
+
+.button-secondary {
+  background-color: #2a2a2a;
+  color: #f8f9fa;
+  border: 1px solid #444;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-secondary:hover {
+  background-color: #3a3a3a;
+}
+
+/* Forms */ /*I ended up not using these, but I still like keeping them around as I learned a lot about the input class from making these.*/
+.input-dark, select {
+  background-color: #2a2a2a;
+  color: #f8f9fa;
+  border: 1px solid #444;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  width: 100%;
+}
+
+.input-dark:focus, select:focus {
+  outline: none;
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Horizontal Rule */ /*Pure white but with some opacity to gray it down*/
+hr {
+  border: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 2rem 0;
+}
+
+/* Layout Utilities */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/*Custom margin values.*/
+.mt-2 { margin-top: 0.5rem; }
+.mt-4 { margin-top: 1rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-4 { margin-bottom: 1rem; }
+
+.text-center {
+  text-align: center;
 }

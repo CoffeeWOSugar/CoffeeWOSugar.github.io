@@ -7,21 +7,23 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
-  <!-- Navbar -->
+  
+  <!-- Navbar In the same way as for the index-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Container for navigation links -->
     <div class="container">
+      <!-- Website title on navbar display -->
       <a class="navbar-brand" href="index.html">My Portfolio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-        </ul>
-      </div>
+
+      <!-- Clickalbe nav-items in unordered list as nav menu-->
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+        <!-- About marked as active since it will be the active page here -->
+        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+      </ul>
     </div>
   </nav>
 
@@ -29,8 +31,10 @@
   <section class="py-5">
     <div class="container">
       <h1 class="mb-4">About Me</h1>
+      <!-- Center div -->
       <div class="row g-4 align-items-center">
         <div class="col-lg-5">
+          <!-- Not real portrait of me, but I would put it here if it was real. -->
           <img src="images/default_profile.png" class="img-fluid rounded-3" alt="Portrait of me">
         </div>
         <div class="col-lg-7">
@@ -43,9 +47,9 @@
       <h2>Education</h2>
       <div class="list-group list-group-flush">
         <div class="list-group-item bg-transparent border-light mb-2">
-          <h5 class="text-light">Masters of Science in Engineering <span class="text-secondary fs-6">- Uppsala University</span></h5>
-          <p class="text-light">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacus risus, faucibus interdum dapibus ut, aliquam eu magna. Phasellus ultrices, felis non ornare lacinia, leo massa tristique ex, sed ultricies urna neque eu sem. Aliquam scelerisque dictum viverra. Aliquam semper mollis nibh, in ultrices sapien consectetur id. Curabitur mi libero, sollicitudin et hendrerit eu, rhoncus a mi. Nam quis mauris eros. Morbi quis suscipit est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies tincidunt pharetra. Nunc nec rutrum libero. Duis convallis luctus mauris nec rutrum. Duis viverra mattis eros, quis sollicitudin massa auctor eu. Praesent condimentum at quam et lacinia. Nam ac erat in turpis imperdiet dictum ac nec augue. Fusce non sapien nibh. Proin quis est a odio sollicitudin tincidunt sit amet in quam.</p>
+          <!-- The text-secondary class on the place of study is quite nice on the eyes and draws the focus towards the title and not where.-->
+          <h5 class="text-light">Masters of Science in Engineering <span class="text-secondary fs-6">- Uppsala University (2021-2026)</span></h5>
+          <p class="text-light">Computer engineering combines electrical engineering and computer science to design and develop computer systems, hardware, and software. It focuses on creating efficient, reliable, and innovative technology solutions for everything from microprocessors to embedded systems and networks.</p>
         </div>
       </div>
 
@@ -53,6 +57,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacus risus, faucib
       <h2 class="mt-5 mb-3">Work Experience</h2>
       <div class="list-group list-group-flush">
         <div class="list-group-item bg-transparent border-light mb-2">
+          <!-- Here I do each experience similarly to the education -->
           <h5 class="text-light">Senior Developer <span class="text-secondary fs-6">- Company ABC (2023-Present)</span></h5>
           <p class="text-light mb-1">Leading a team of developers to build scalable industrial systems.</p>
         </div>
@@ -66,7 +71,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacus risus, faucib
         </div>
       </div>
 
-      <!-- Gallery -->
+      <!-- Picture Gallery -->
       <h2 class="mt-5 mb-3">Gallery</h2>
       <div class="row g-3">
         <div class="col-6 col-md-4">
@@ -82,6 +87,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacus risus, faucib
     </div>
   </section>
 
+  <!-- Footer which may contain copyright info, in this case there is none. -->
   <footer class="py-4 text-center">
     <div class="container">
       <small>&copy; 2025 Could be placed here, but is not for the assignment.</small>
